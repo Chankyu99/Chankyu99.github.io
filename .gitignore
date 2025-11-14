@@ -23,5 +23,6 @@ package-lock.json
 !.vscode/tasks.json
 
 # Misc
-_sass/vendors
-assets/js/dist
+# 밑에 두개 주석처리
+# _sass/vendors
+# assets/js/dist
