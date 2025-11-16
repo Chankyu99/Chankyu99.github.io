@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Chankyu Lee # the main title
 
-tagline: 磨穿鐵硯 # it will display as the subtitle
+tagline: "ModuLABS DS 7TH" # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
