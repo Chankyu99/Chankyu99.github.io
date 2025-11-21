@@ -1,10 +1,10 @@
 ---
 title: Github blog 시작!
 description: 꿈을 그려가는 하나의 과정으로 생각하기.
-author: cotes
+# author: Chankyu Lee
 date: 2025-11-16 11:33:00 +0800
-categories: [Blogging, Demo]
-tags: [typography]
+categories: [Github, Blog]
+tags: [Github Blog]
 pin: true
 math: true
 mermaid: true
@@ -16,8 +16,3 @@ mermaid: true
 
 ---
 
-# 드디어 첫 글을 써본다..
-만드는데 거의 3~4시간 걸린듯 .. 
-이제는 시간이 너무 지나서 다음에 내가 블로그를 만들며 겪었던 문제를 어떻게 해결했는지 정리해보려 한다.
-그게 언제가 될지는 모르겠지만, 앞으로의 개발 관련 공부와 기록을 여기에 남기려고 한다.
-늘 생각하지만 꾸준함이 제일 어려운 것 같다. 이번에도 힘내보자!
