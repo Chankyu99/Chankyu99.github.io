@@ -9,3 +9,52 @@
 ';
 
 /* append your custom style below */
+
+/* Tooltip for abbreviations */
+abbr[title] {
+  position: relative;
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+abbr[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text-color);
+  color: var(--card-bg);
+  padding: 0.5em 1em;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  z-index: 9999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+abbr[title]:hover::after {
+  opacity: 1;
+}
+
+/* Optional: Arrow */
+abbr[title]:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--text-color) transparent transparent transparent;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+abbr[title]:hover::before {
+  opacity: 1;
+}
