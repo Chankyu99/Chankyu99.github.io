@@ -6,7 +6,7 @@ categories: [Theory, Data Preprocessing]
 tags: [Feature Scaling, Normalization, Standardization, Encoding]
 math: true
 ---
-**피처 스케일링**(Feature Scaling)은 머신러닝 모델을 학습하기 전에 서로 다른 범위의 수치형 데이터를 **같은 척도로 변환하는 전처리 기법**이다. 이번에는 [SQL 프로젝트]()에서 사용했던 `StandardScaler`의 원리와 특징을 정리하고, 다양한 피처 스케일링 방법들을 정리해보았다. 그리고 피처 스켕일링에 필요한 범주형 데이터와 연속형 데이터에 대해 알아보았다.
+**피처 스케일링**(Feature Scaling)은 머신러닝 모델을 학습하기 전에 서로 다른 범위의 수치형 데이터를 **같은 척도로 변환하는 전처리 기법**이다. 이번에는 [SQL 프로젝트](https://chankyu99.github.io/posts/Node_SQL_Project/)에서 사용했던 `StandardScaler`의 원리와 특징을 정리하고, 다양한 피처 스케일링 방법들을 정리해보았다. 그리고 피처 스caling에 필요한 범주형 데이터와 연속형 데이터에 대해 알아보았다.
 
 ---
 
