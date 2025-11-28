@@ -17,7 +17,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   overflow-y: auto;
   width: v.$sidebar-width;
   # background: var(--sidebar-bg);
-  background: url('/assets/img/sidebar2.jpg');
+  background: url('/assets/img/sidebar.jpg');
   background-size: 100% 100%;
   background-position: center;
   border-right: 1px solid var(--sidebar-border-color);
@@ -109,12 +109,12 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
     width: fit-content;
-    color: rgba(254, 254, 254, 90%);
+    color: #838483;
   }
 
   .site-subtitle {
     font-size: 95%;
-    color: rgba(254, 254, 254, 90%);
+    color: #838483;
     margin-top: 0.25rem;
     word-spacing: 1px;
     -webkit-user-select: none;
