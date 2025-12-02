@@ -2,7 +2,7 @@
 title: "피처 스케일링(Feature Scaling) 총정리" 
 description: "Min-Max, Z-Score부터 범주형 데이터 인코딩까지"
 date: 2025-11-27
-categories: [Development, Data Preprocessing]
+categories: [Development, Data Science]
 tags: [Feature Scaling, Normalization, Standardization, Encoding]
 math: true
 ---

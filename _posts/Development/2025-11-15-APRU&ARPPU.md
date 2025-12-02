@@ -2,7 +2,7 @@
 title: "게임 업계로 적용하는 ARPU, ARPPU & 퍼널분석"
 description: "SQL 심화 - SQL로 데이터 분석하기"
 date: 2025-11-25 
-categories: [Development, Data Analysis]
+categories: [Development, Data Science]
 tags: [ModuLABS, Data Analysis, SQL]
 math: true
 # pin: true
