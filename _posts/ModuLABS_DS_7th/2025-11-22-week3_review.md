@@ -1,6 +1,5 @@
 ---
-title: "[WIL] 2주차: 데이터 사이언티스트를 향한 첫걸음 (SQL)"
-date: 2025-11-15 
+title: "[모두의연구소 데이터 사이언티스트 7기] 3주차 회고록"
 date: 2025-11-20
 categories: [ModuLABS DS 7th, Review]
 tags: [ModuLABS]

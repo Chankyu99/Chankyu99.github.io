@@ -1,6 +1,6 @@
 ---
-title: "[WIL] 1주차: 데이터 사이언티스트를 향한 첫걸음 (Linux, Git, Python)"
-date: 2025-11-15 18:00:00 +0900
+title: "[모두의연구소 데이터 사이언티스트 7기] 1주차 회고록"
+date: 2025-11-15
 categories: [ModuLABS DS 7th, Review]
 tags: [ModuLABS, Linux, Git, Python, WIL]
 pin: false
