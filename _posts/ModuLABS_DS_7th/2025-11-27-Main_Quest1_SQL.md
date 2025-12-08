@@ -1,6 +1,6 @@
 ---
-title: "고객 세그먼테이션 - 이상치, 스케일링, 상관관계, 다중공선성, 차원축소, 클러스터링"
-description: "SQL을 사용하여 데이터베이스 다루기"
+title: "[Main Quest] SQL을 사용하여 데이터베이스 다루기"
+description: "고객 세그먼테이션"
 date: 2025-11-27 
 categories: [ModuLABS DS 7th, Main Quest]
 tags: [ModuLABS, Main Quest, SQL]
