@@ -78,9 +78,9 @@ def plot(*args, **kwargs):
 
 흔한 경우처럼 `plt.plot()`을 쓰는 것이 편하겠지만, `Subplot`을 다룰경우 특정 객체를 지향하고 그것을 사용하는 것이 `Matplotlib.pyplot`의 **<mark>객체 지향의 특징</mark>**을 잘 보여주는 것이라고 할 수 있다. 여러가지 데이터의 실습을 통해서 익숙해지는 것이 데이터 시각화에 있어서 훨씬 더 정교하게 제어가 가능하기에 알아두는 것이 좋다고 생각한다.
 
-[3](/assets/img/plt3.png)
+![3](/assets/img/plt3.png)
 
-[4](/assets/img/plt4.png)
+![4](/assets/img/plt4.png)
 _Cheetseets도 제공하고 있어 유용하다._
 
 
