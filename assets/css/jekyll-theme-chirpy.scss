@@ -58,3 +58,8 @@ abbr[title]:hover::before {
 abbr[title]:hover::before {
   opacity: 1;
 }
+
+/* 사용자 정의 줄 간격 설정 */
+article.post-content {
+  line-height: 3.0; /* 원하는 값으로 조절 (예: 1.6, 1.8, 2.0 등) */
+}
