@@ -1,5 +1,5 @@
 ---
-title: "[모두의연구소 데이터 사이언티스트 7기] 12/9 ~ 1/9 두번째 단위기간 종료 및 후기"
+title: "[모두의연구소 데이터 사이언티스트 7기] 12/9 ~ 1/14 두번째 단위기간 종료 및 후기"
 date: 2025-12-18 
 categories: [Career, ModuLABS DS 7th]
 tags: [ModuLABS]
