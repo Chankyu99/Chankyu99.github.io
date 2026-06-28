@@ -1,0 +1,47 @@
+{% assign home_projects = site.posts | where: 'home_project', true %}
+
+{% if home_projects.size > 0 %}
+  <section id="home-projects" class="home-section">
+    <h2>프로젝트 모음</h2>
+
+    <div class="home-project-grid">
+      {% assign projects_limit = site.home_profile.projects_limit | default: 4 %}
+      {% for post in home_projects limit: projects_limit %}
+        <article class="home-project-card{% unless post.image %} text-only{% endunless %}">
+          <a href="{{ post.url | relative_url }}">
+            {% if post.image %}
+              {% assign image_src = post.image.path | default: post.image %}
+              {% capture image_url %}
+                {% include media-url.html src=image_src subpath=post.media_subpath %}
+              {% endcapture %}
+              <div class="home-project-cover">
+                <img
+                  src="{{ image_url | strip }}"
+                  alt="{{ post.image.alt | default: post.title | escape }}"
+                  loading="lazy"
+                >
+              </div>
+            {% endif %}
+
+            <div class="home-project-body">
+              <h3>{{ post.title }}</h3>
+              <p>{% include post-summary.html max_length=110 %}</p>
+
+              <div class="home-project-properties">
+                {% if post.project_meta.topic %}
+                  <span class="primary">{{ post.project_meta.topic }}</span>
+                {% endif %}
+                {% if post.project_meta.team %}
+                  <span>{{ post.project_meta.team }}</span>
+                {% endif %}
+                {% if post.project_meta.year %}
+                  <span>{{ post.project_meta.year }}</span>
+                {% endif %}
+              </div>
+            </div>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

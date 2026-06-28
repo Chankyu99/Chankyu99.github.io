@@ -1,7 +1,7 @@
 ---
 title: "[모두의연구소 데이터 사이언티스트 7기] 11/10 ~ 12/07 첫번째 단위기간 종료 및 후기"
 date: 2025-12-07 
-categories: [Career, ModuLABS DS 7th]
+categories: [취준 기록, 모두연 DS 7기]
 tags: [ModuLABS]
 pin: false
 math: true
@@ -124,7 +124,7 @@ _데이터는 항상 깔끔하게 정제되어 있지 않다._
 
 그러나 현실은 이상과 다르다. 모든 데이터셋을 우리가 원하는 대로 정제하려면 그것을 위한 전처리 과정이 필요하다. 
 
-데이터를 정제하는 방법을 배우며 Main Quest 2번째로 [신용거래 이상탐지 데이터 다루기](http://chankyu99.github.io/posts/Main_Quest2_data_preprocessing/)를 진행하였다. 
+데이터를 정제하는 방법을 배우며 Main Quest 2번째로 [신용거래 이상탐지 데이터 다루기](https://chankyu99.github.io/posts/Main_Quest2_data_preprocessing/)를 진행하였다.
 
 프로젝트를 통해 어떻게 하면 예측 모델링에 필요한 성능향상을 기여할 수 있는 특성을 엔지니어링 할 수 있을지, 어떤 특성을 조합해야 가장 좋을지 고민하며 최적의 인사이트를 찾는 분석력을 기를 수 있었다.
 
@@ -140,4 +140,3 @@ _출처 : 유튜브 [데싸노트](https://youtu.be/6XP9tIYph_Q?si=r2fxMdQs_jnBx
 그래서 내가 놓쳤다고 생각할 수 있는 부분과 실무에서 유용한 함수를 정리한 [글](https://chankyu99.github.io/posts/Data_Cleaning/)을 포스트할 예정이다. 
 
 이걸로 부족한 부분을 빨리 메꾸어야 다음에 배울 과정에 무리없이 따라갈 수 있을 것이다. 
-

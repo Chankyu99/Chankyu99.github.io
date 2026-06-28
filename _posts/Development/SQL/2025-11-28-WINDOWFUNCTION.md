@@ -2,7 +2,7 @@
 title: "SQL 실무에 많이 쓰이는 Window Function"
 description: "SQL 심화 - SQL로 데이터 분석하기"
 date: 2025-11-28 
-categories: [Development, SQL]
+categories: [공부 기록, SQL]
 tags: [SQL, Window Function]
 math: true
 # pin: true

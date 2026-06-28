@@ -17,6 +17,35 @@
 #topbar {
   @extend %btn-color;
 
+  .home-identity {
+    min-width: 0;
+    padding-left: 0.5rem;
+
+    strong,
+    small {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    strong {
+      color: var(--topbar-text-color);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    small {
+      margin-top: 0.1rem;
+      color: var(--text-muted-color);
+      font-size: 0.72rem;
+    }
+
+    @include bp.lt(bp.get(lg)) {
+      display: none;
+    }
+  }
+
   #breadcrumb {
     font-size: 1rem;
     color: var(--text-muted-color);

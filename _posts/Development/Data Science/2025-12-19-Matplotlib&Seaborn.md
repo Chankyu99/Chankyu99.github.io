@@ -2,7 +2,7 @@
 title : "무지성 plt.plot()만 쓰는 너에게 - pyplot 뜯어보기"
 description : "Matplotlib.pyplot으로 알아보는 파이썬의 객체 지향"
 date : 2025-12-19
-categories : [Development, Data Science]
+categories: [공부 기록, 데이터 사이언스]
 tags : [Matplotlib, Seaborn]
 pin : false
 math : true
@@ -13,7 +13,7 @@ mermaid : true
 
 데이터 시각화에서 빼놓을 수 없는 라이브러리, 바로 `Matplotlib.pyplot`이다.
 
-<img src="/assets/img/plt.png" width="700" height="700"/>
+<img src="/assets/img/plt.png" width="700" height="700" alt="Matplotlib pyplot 소개 이미지">
 _이름이 너무 길어요_
 
 가장 많이 쓰는 라이브러리 이지만, 막상 라이브러리를 사용할 때마다 공식문서를 들락날락 거리게하는 아주 귀찮은 라이브러리라고 할 수 있겠다.
@@ -88,4 +88,3 @@ _Cheetseets도 제공하고 있어 유용하다._
 [1] [Matplotlib.pyplot 공식 문서](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html)
 
 [2] [Matplotlib.pyplot Github](https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/pyplot.py)
-

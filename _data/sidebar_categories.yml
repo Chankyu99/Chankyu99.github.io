@@ -1,0 +1,23 @@
+- title: 공부 기록
+  children:
+    - 알고리즘
+    - CV
+    - 데이터 사이언스
+    - 선형대수
+    - 머신러닝·딥러닝
+    - SQL
+    - 통계
+- title: 프로젝트
+  children:
+    - 개인 프로젝트
+    - 팀 프로젝트
+- title: 취준 기록
+  children:
+    - 모두연 DS 7기
+    - 인턴
+    - 자격증·면접
+- title: 일상
+  children:
+    - 취미
+    - 여행
+    - 독서

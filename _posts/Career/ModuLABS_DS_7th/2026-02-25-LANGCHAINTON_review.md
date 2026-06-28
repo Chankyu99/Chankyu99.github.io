@@ -1,7 +1,7 @@
 ---
 title: "[모두의연구소 데이터 사이언티스트 7기] 2/19 ~ 2/24 LANGCHAINTON 후기"
 date: 2026-02-25
-categories: [Career, ModuLABS DS 7th]
+categories: [취준 기록, 모두연 DS 7기]
 tags: [ModuLABS]
 pin: false
 math: true

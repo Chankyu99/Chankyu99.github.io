@@ -2,9 +2,17 @@
 title: "[Project] Data Transformation"
 description: "영국 시장의 중고 자동차 가격 데이터 다루기"
 date: 2025-12-03
-categories: [Project, Personal]
+categories: [프로젝트, 개인 프로젝트]
 tags: [Project, DataAnalysis]
 mermaid: true
+image:
+  path: /assets/img/data_cleaning.png
+  alt: 데이터 전처리 과정
+home_project: true
+project_meta:
+  topic: Data
+  team: 개인 프로젝트
+  year: 2025
 # pin: true
 # 게시글 썸네일
 # image :

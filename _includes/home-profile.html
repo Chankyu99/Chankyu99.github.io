@@ -1,0 +1,27 @@
+<section id="home-profile" class="home-profile">
+  {% capture profile_image_url %}
+    {% include media-url.html src=site.home_profile.image %}
+  {% endcapture %}
+
+  <img
+    src="{{ profile_image_url | strip }}"
+    alt="{{ site.home_profile.image_alt | escape }}"
+    width="320"
+    height="400"
+  >
+
+  <div class="home-profile-copy">
+    <p class="home-profile-role">{{ site.home_profile.role }}</p>
+    <h1>{{ site.home_profile.headline }}</h1>
+    <p class="home-profile-description">{{ site.home_profile.description }}</p>
+
+    <div class="home-profile-links">
+      <a href="https://github.com/{{ site.github.username }}" target="_blank" rel="noopener noreferrer">
+        GitHub <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+      </a>
+      <a href="mailto:{{ site.social.email }}">
+        Email <i class="far fa-envelope" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</section>

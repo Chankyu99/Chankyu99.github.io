@@ -178,6 +178,126 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     }
   }
 
+  .sidebar-categories {
+    flex: 1 0 auto;
+    width: 100%;
+    padding: 0 1.25rem 2rem 1.5rem;
+
+    @include bp.xxxl {
+      padding-right: 2.25rem;
+      padding-left: 2.75rem;
+    }
+  }
+
+  .sidebar-category-group {
+    overflow: hidden;
+    border: 1px solid rgb(130 130 130 / 18%);
+    border-radius: 0.5rem;
+    background: rgb(255 255 255 / 62%);
+
+    &:not(:first-child) {
+      margin-top: 0.55rem;
+    }
+
+    &[open] {
+      .category-chevron {
+        transform: rotate(180deg);
+      }
+
+      summary {
+        color: #1d4ed8;
+        background: rgb(232 239 255 / 82%);
+      }
+    }
+
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 0.75rem;
+      color: var(--sidebar-muted-color);
+      font-size: 0.82rem;
+      font-weight: 700;
+      list-style: none;
+      cursor: pointer;
+      transition: color 0.2s ease, background-color 0.2s ease;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &:hover {
+        color: #1d4ed8;
+        background: var(--sidebar-hover-bg);
+      }
+
+      &:focus-visible {
+        outline: 2px solid #2563eb;
+        outline-offset: -2px;
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid rgb(130 130 130 / 16%);
+      list-style: none;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      padding: 0.55rem 0.7rem 0.55rem 1.75rem;
+      color: var(--sidebar-muted-color);
+      font-size: 0.76rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid rgb(130 130 130 / 13%);
+      }
+
+      a {
+        min-width: 0;
+        overflow: hidden;
+        color: inherit;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+          color: #1d4ed8;
+        }
+
+        &:focus-visible {
+          outline: 2px solid #2563eb;
+          outline-offset: 2px;
+        }
+      }
+
+      small {
+        flex: 0 0 auto;
+        color: var(--sidebar-btn-color);
+        font-size: 0.68rem;
+      }
+
+      &.empty {
+        opacity: 0.52;
+      }
+    }
+  }
+
+  .category-summary-label {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .category-chevron {
+    flex: 0 0 auto;
+    transition: transform 0.2s ease;
+  }
+
   .sidebar-bottom {
     // ▼▼▼ 1. Flexbox로 변경 ▼▼▼
     display: flex;

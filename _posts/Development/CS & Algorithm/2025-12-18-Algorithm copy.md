@@ -1,7 +1,7 @@
 ---
 title: "그리디(Greedy) 알고리즘 - 개념"
 date: 2026-01-25 
-categories: [Development, CS & Algorithm]
+categories: [공부 기록, 알고리즘]
 tags: [Algorithm]
 pin: false
 math: true

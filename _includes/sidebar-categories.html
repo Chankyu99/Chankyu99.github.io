@@ -1,0 +1,42 @@
+<nav class="sidebar-categories" aria-label="글 카테고리">
+  {% for group in site.data.sidebar_categories %}
+    {% assign group_open = false %}
+
+    {% if page.layout == 'home' and group.title == '공부 기록' %}
+      {% assign group_open = true %}
+    {% endif %}
+
+    {% if page.categories contains group.title or page.title == group.title %}
+      {% assign group_open = true %}
+    {% endif %}
+
+    {% if group.children contains page.title %}
+      {% assign group_open = true %}
+    {% endif %}
+
+    <details class="sidebar-category-group"{% if group_open %} open{% endif %}>
+      <summary>
+        <span class="category-summary-label">
+          <i class="far fa-folder fa-fw" aria-hidden="true"></i>
+          {{ group.title }}
+        </span>
+        <i class="fas fa-angle-down category-chevron" aria-hidden="true"></i>
+      </summary>
+
+      <ul>
+        {% for child in group.children %}
+          {% assign post_count = site.categories[child] | size %}
+          <li{% if post_count == 0 %} class="empty"{% endif %}>
+            {% if post_count > 0 %}
+              {% capture category_url %}/categories/{{ child | slugify | url_encode }}/{% endcapture %}
+              <a href="{{ category_url | relative_url }}">{{ child }}</a>
+            {% else %}
+              <span>{{ child }}</span>
+            {% endif %}
+            <small>{{ post_count }}</small>
+          </li>
+        {% endfor %}
+      </ul>
+    </details>
+  {% endfor %}
+</nav>

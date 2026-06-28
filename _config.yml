@@ -101,6 +101,20 @@ img_cdn: # "https://chirpy-img.netlify.app"
 # the avatar on sidebar, support local or CORS resources
 avatar: "/assets/img/my_profile5.png"
 
+home_identity:
+  title: "페이지 정체성 문구"
+  subtitle: "AI 프로젝트와 학습 기록"
+
+home_profile:
+  image: "/assets/img/profile.jpg"
+  image_alt: "이찬규 프로필 사진"
+  role: "AI Engineer · Applied Data"
+  headline: "사용자가 느끼는 단순함을 최고의 성능이라 믿는 AI 엔지니어입니다."
+  description: >-
+    복잡한 데이터와 AI 파이프라인을 실제 의사결정과 편리한 사용자 경험으로 연결합니다.
+  recent_posts_limit: 3
+  projects_limit: 4
+
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

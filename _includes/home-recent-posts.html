@@ -1,0 +1,42 @@
+<section id="home-recent-posts" class="home-section">
+  <h2>최근 기록</h2>
+
+  <div class="home-post-list">
+    {% assign recent_posts = site.posts | where_exp: 'post', 'post.hidden != true' %}
+    {% assign recent_limit = site.home_profile.recent_posts_limit | default: 3 %}
+
+    {% for post in recent_posts limit: recent_limit %}
+      <article class="home-post-card{% unless post.image %} text-only{% endunless %}">
+        <a href="{{ post.url | relative_url }}" class="home-post-body">
+          <h3>{{ post.title }}</h3>
+          <p>{% include post-summary.html max_length=150 %}</p>
+
+          <div class="home-post-meta">
+            {% if post.categories.size > 0 %}
+              <span>{{ post.categories | last }}</span>
+            {% endif %}
+            {% include datetime.html date=post.date lang=lang %}
+          </div>
+        </a>
+
+        {% if post.image %}
+          {% assign image_src = post.image.path | default: post.image %}
+          {% capture image_url %}
+            {% include media-url.html src=image_src subpath=post.media_subpath %}
+          {% endcapture %}
+          <a
+            href="{{ post.url | relative_url }}"
+            class="home-post-thumbnail"
+            aria-label="{{ post.title | escape }}"
+          >
+            <img
+              src="{{ image_url | strip }}"
+              alt="{{ post.image.alt | default: post.title | escape }}"
+              loading="lazy"
+            >
+          </a>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>

@@ -2,7 +2,7 @@
 title: "[Main Quest] 비정제 데이터 체험하기"
 description: "신용거래 이상탐지 데이터 다루기"
 date: 2025-12-05 
-categories: [Career, ModuLABS DS 7th]
+categories: [취준 기록, 모두연 DS 7기]
 tags: [ModuLABS, Main Quest, SQL]
 math: true
 # pin: true

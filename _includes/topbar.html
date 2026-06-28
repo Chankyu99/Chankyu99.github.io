@@ -5,14 +5,19 @@
     id="topbar"
     class="d-flex align-items-center justify-content-between px-lg-3 h-100"
   >
-    <nav id="breadcrumb" aria-label="Breadcrumb">
-      {% assign paths = page.url | split: '/' %}
+    {% if page.layout == 'home' %}
+      <div class="home-identity">
+        {% if site.home_identity.title %}
+          <strong>{{ site.home_identity.title }}</strong>
+        {% endif %}
+        {% if site.home_identity.subtitle %}
+          <small>{{ site.home_identity.subtitle }}</small>
+        {% endif %}
+      </div>
+    {% else %}
+      <nav id="breadcrumb" aria-label="Breadcrumb">
+        {% assign paths = page.url | split: '/' %}
 
-      {% if paths.size == 0 or page.layout == 'home' %}
-        <!-- index page -->
-        <span>{{ site.data.locales[include.lang].tabs.home | capitalize }}</span>
-
-      {% else %}
         {% for item in paths %}
           {% if forloop.first %}
             <span>
@@ -36,8 +41,8 @@
             </span>
           {% endif %}
         {% endfor %}
-      {% endif %}
-    </nav>
+      </nav>
+    {% endif %}
     <!-- endof #breadcrumb -->
 
     <button type="button" id="sidebar-trigger" class="btn btn-link" aria-label="Sidebar">

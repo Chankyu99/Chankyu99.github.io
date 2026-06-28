@@ -31,3 +31,6 @@ package-lock.json
 *~
 .DS_Store
 Thumbs.db
+
+# Superpowers visual brainstorming artifacts
+.superpowers/
