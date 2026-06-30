@@ -8,14 +8,14 @@
 
 .home-profile {
   display: grid;
-  grid-template-columns: 10rem minmax(0, 1fr);
+  grid-template-columns: 12.5rem minmax(0, 1fr);
   gap: 2rem;
   align-items: center;
   padding: 2rem 0 2.5rem;
   border-bottom: 1px solid var(--main-border-color);
 
   > img {
-    width: 10rem;
+    width: 12.5rem;
     aspect-ratio: 4 / 5;
     object-fit: cover;
     object-position: top;
@@ -302,7 +302,7 @@
     padding-top: 1.5rem;
 
     > img {
-      width: 7.5rem;
+      width: 8.5rem;
       box-shadow: 0.5rem 0.5rem 0 #e8efff;
     }
   }

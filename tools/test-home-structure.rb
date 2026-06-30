@@ -21,6 +21,7 @@ Dir['_posts/**/*.md'].each do |path|
 end
 
 home = Nokogiri::HTML(File.read('_site/index.html'))
+home_styles = File.read('_sass/pages/_profile-home.scss')
 
 assert(home.at_css('#panel-wrapper').nil?, 'home right panel must not render')
 assert(home.at_css('#home-profile'), 'home profile is missing')
@@ -29,5 +30,8 @@ assert(home.css('#home-projects .home-project-card').size <= 4, 'home must show 
 assert(home.css('#sidebar .sidebar-category-group').size == 4, 'sidebar must show four category groups')
 assert(home.at_css('#topbar .home-identity'), 'home identity is missing from topbar')
 assert(home.at_css('#search-input'), 'search input is missing')
+assert(home_styles.include?('grid-template-columns: 12.5rem minmax(0, 1fr);'), 'desktop profile column must be 200px')
+assert(home_styles.include?('width: 12.5rem;'), 'desktop profile image must be 200px wide')
+assert(home_styles.include?('width: 8.5rem;'), 'mobile profile image must be 136px wide')
 
 puts 'home structure checks passed'
